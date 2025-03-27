@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f4eyPdHn+QiFsif5ATEZL3beVX68bpjwm7ek1bQSHO8yVxUQq3okCvXZzCFmuQPoQmOSC9jeQH5r/SfeXXdfhA==",
+  "dgSpecHash": "TLneeFA9F8mZ50hHkfq8Hr0MeQQHMcml4sQ5esyEF1MWy6BSNtO+laiPg6exaioI0tybsS+TukDma2gb0xwJxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\תהילה\\Desktop\\הנדסאים\\parctiCode\\ToDoList\\todoapi\\TodoApi.csproj",
+  "projectFilePath": "C:\\Users\\תהילה\\Desktop\\הנדסאים\\parctiCode\\ToDoList\\TodoApi\\TodoApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\תהילה\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\תהילה\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -29,6 +29,7 @@
     "C:\\Users\\תהילה\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\תהילה\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\תהילה\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\תהילה\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\microsoft.visualstudio.azure.containers.tools.targets.1.19.6.nupkg.sha512",
     "C:\\Users\\תהילה\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\תהילה\\.nuget\\packages\\mysqlconnector\\2.3.5\\mysqlconnector.2.3.5.nupkg.sha512",
     "C:\\Users\\תהילה\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.0\\pomelo.entityframeworkcore.mysql.8.0.0.nupkg.sha512",
