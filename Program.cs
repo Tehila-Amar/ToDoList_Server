@@ -27,7 +27,7 @@ app.UseCors("AllowAll");
 
 // app.MapGet("/", () => "my apliction running");
 
-app.MapGet("/", (ToDoDbContext db) => Results.Ok(db.Items.ToList()));
+app.MapGet("/items", (ToDoDbContext db) => Results.Ok(db.Items.ToList()));
 
 app.MapPost("/items", (Item newItem, ToDoDbContext db) =>
 {
