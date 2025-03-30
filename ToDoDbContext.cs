@@ -18,14 +18,7 @@ public partial class ToDoDbContext : DbContext
 
     public virtual DbSet<Item> Items { get; set; }
 
-    // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    // => optionsBuilder.UseMySql(
-    //     "server=be7s8bagknqyvcd69kvz-mysql.services.clever-cloud.com;port=3306;database=be7s8bagknqyvcd69kvz;user=u1mdlwzfmorieody;password=ylFYzvqNwoL5TloE52gt;", 
-    //     Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.35-mysql"));
-
-
-    // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    //     => optionsBuilder.UseMySql("name=ToDoDB", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.35-mysql"));
+ 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
