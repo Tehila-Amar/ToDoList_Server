@@ -7,7 +7,7 @@
 [Dd]ebug-wp/
 [Dd]ist/
 [Dd]ist-wp/
-
+.env
 # User-specific files
 .idea/
 .vscode/
