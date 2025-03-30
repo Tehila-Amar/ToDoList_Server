@@ -68,14 +68,21 @@
 
 using TodoApi;
 using Microsoft.EntityFrameworkCore;
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// שמירת מחרוזת החיבור במשתנה כדי למנוע קריאה כפולה
-var connectionString = builder.Configuration.GetConnectionString("ToDoDB");
+Env.Load();
 
+// שמירת מחרוזת החיבור במשתנה כדי למנוע קריאה כפולה
+// var connectionString = builder.Configuration.GetConnectionString("ToDoDB");
+var connectionString = Environment.GetEnvironmentVariable("ToDoDB");
 builder.Services.AddDbContext<ToDoDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
+
+// builder.Services.AddDbContext<ToDoDbContext>(options =>
+    // options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 builder.Services.AddCors(options =>
 {
@@ -105,6 +112,7 @@ app.MapGet("/items", (ToDoDbContext db) => Results.Ok(db.Items.ToList()));
 
 app.MapPost("/items", (Item newItem, ToDoDbContext db) =>
 {
+    newItem.IsComplete=false;
     db.Items.Add(newItem);
     db.SaveChanges();
     return Results.Created($"/items/{newItem.Id}", newItem);
