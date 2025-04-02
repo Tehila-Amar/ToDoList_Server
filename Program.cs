@@ -72,7 +72,7 @@ using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
 
-Env.Load();
+// Env.Load();
 
 // שמירת מחרוזת החיבור במשתנה כדי למנוע קריאה כפולה
 // var connectionString = builder.Configuration.GetConnectionString("ToDoDB");
